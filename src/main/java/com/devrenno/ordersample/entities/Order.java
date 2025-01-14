@@ -9,9 +9,9 @@ public class Order {
     private double discount;
 
     public Order(int code, double basicValue, double discount) {
-        this.code = code;
-        this.basicValue = basicValue;
-        this.discount = discount;
+        this.setCode(code);
+        this.setBasicValue(basicValue);
+        this.setDiscount(discount);
     }
 
     public int getCode() {

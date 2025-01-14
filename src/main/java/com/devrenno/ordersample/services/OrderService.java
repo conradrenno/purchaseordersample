@@ -8,10 +8,7 @@ import org.springframework.stereotype.Service;
 public class OrderService {
 
     @Autowired
-    private Order order;
-
-    @Autowired
-    private ShippingService shippingService;
+    ShippingService shippingService;
 
     public double total(Order order, ShippingService shippingService){
         return order.getBasicValue() - order.getBasicValue() * order.getDiscount()
